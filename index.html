@@ -3,36 +3,38 @@
   <head>
     <title>CloudyNite</title>
     <link rel="shortcut icon" href="CloudyNightIcon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <style>
-             ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          border: 1px solid #e7e7e7;
-          background-color: #f3f3f3;
-      }
+            body {margin: 0;}
 
-      li {
-          float: left;
-      }
+            ul.topnav {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+            }
 
-      li a {
-          display: block;
-          color: #666;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-      }
+            ul.topnav li {float: left;}
 
-      li a:hover:not(.active) {
-          background-color: #ddd;
-      }
+            ul.topnav li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
 
-      li a.active {
-          color: white;
-          background-color: #4CAF50;
-      }
+            ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+            ul.topnav li a.active {background-color: #4CAF50;}
+
+            ul.topnav li.right {float: right;}
+
+            @media screen and (max-width: 600px){
+                ul.topnav li.right, 
+                ul.topnav li {float: none;}
+            }
     </style>
   </head>
   <body>
@@ -42,7 +44,7 @@
       <li><a class="active" href="#home">Home</a></li>
       <li><a href="#news">News</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="#about">About</a></li>
+      <li class="right"><a href="#about">About</a></li>
     </ul>
   <style>
     body{
