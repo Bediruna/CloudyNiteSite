@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CloudyNite</title>
+    <link rel="shortcut icon" href="CloudyNightIcon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+            body {
+              margin: 0;
+              font-size: 100%;}
+    /*Navigation bar*/
+            ul.topnav {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+            }
+            ul.topnav li {float: left;}
+            ul.topnav li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            ul.topnav li a:hover:not(.active) {background-color: #111;}
+            ul.topnav li a.active {background-color: #0564ff;}
+            ul.topnav li.right {float: right;}
+            @media screen and (max-width: 600px){
+                ul.topnav li.right, 
+                ul.topnav li {float: none;}
+            }
+            h1 {
+                  font-size: 2.75em;
+            }
+     /*Layout*/
+            .flex-container {
+                display: -webkit-flex;
+                display: flex;  
+                -webkit-flex-flow: row wrap;
+                flex-flow: row wrap;
+                text-align: center;
+            }
+            .flex-container > * {
+                padding: 10px;
+                -webkit-flex: 1 100%;
+                flex: 1 100%;
+            }
+            .article {
+                text-align: left;
+            }
+            header {background-image:url("CloudsAndMoon.jpg"); color:white}
+            footer {background: #aaa;color:white;}
+            .nav {background:#eee;}
+            .nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            .nav ul a {
+                text-decoration: none;
+            }
+            @media all and (min-width: 768px) {
+                .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+                footer {-webkit-order:3;order:3;}
+            }
+    </style>
+  </head>
+  <body>
+    
+    <div class="flex-container">
+      <header>
+        <h1><b>Cloudy Nite</b></h1>
+      </header>
+
+      <nav class="nav">
+      <ul class="topnav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop">Shop</a></li>
+        <li><a class="active" href="contact">Contact</a></li>
+        <li class="right"><a href="about">About</a></li>
+      </ul>
+      </nav>
+
+      <article class="article">
+        <h1>Contact Us</h1>
+        <p>Para1</p>
+        <p>Para2</p>
+      </article>
+      
+      <footer>Copyright &copy;</footer>
+    </div>
+    
+  </body>
+</html>
